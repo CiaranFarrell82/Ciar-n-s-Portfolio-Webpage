@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Add your meta description" />
+    <!-- meta tag below is used for Internet Explorer and mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--This means that the browser will (probably) render the width of the page at the width of its own screen. //-->
+    <title>Ciaran's Portfolio Website</title>
+    <!-- add your stylesheet and any other styling code, e.g. google fonts  a good link is https://fonts.google.com/-->
+	
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;900&display=swap" rel="stylesheet"> 
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+</head>
+
+<!-- all the classes below will require some CSS styles to be included in your layout.css file, if you do not
+include a style for these classes you should remove the class from your html file //-->
+<body>
+    <main class= "main-style";>
+	 <header class="page-header">  <!-- What does the header do? The header tag represents the start of our website body and the class allows us to reference it in our CSS file -->
+            <div class="header-content">  <!-- What is a div? A div is used as a container for HTML code which is then styled with css.-->
+                <img alt="profile image" src="images/ciaran.png" class= "profile-image">
+                <h1>Ciaran's Portfolio Website</h1>
+            </div>
+     </header>
+	    <!-- You could style Main here if you wish-->
+        <nav class="page-nav"> <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
+                <a href="#about">ABOUT ME</a>
+                <a href="#work">WORK EXPERIENCE</a>
+                <a href="#projects">CODING PROJECTS</a>
+                <a href="#images">PROJECT SCREENSHOTS</a>
+                <a href="#contact">CONTACT ME</a>
+        </nav>
+       
+    <!--Note here the use of an ID.  the link above actually links to this.  It's a good example of where an ID can be used. Note also that the section has a class attribute.  use this for styling. -->
+        <section id="about" class="about-me container">  <!--What does the section do here?  The section tag is grouping elements - the container and it's contents -->
+            <div class="container-content">
+                <h2><i class="fas fa-user-circle"></i> About Me</h2>
+                <div class="about-me-content">
+                </a>
+
+                My name is Ciarán Farrell, I am currently studying Enterprise Computing in DCU and I am 18 years old. I have a few different hobbies including: Gaming, MMA and Coding. I really enjoy listening to rap and hip hop music. My favorite artist at the moment is definitely The Kid Laroi.<br> Currently I am improving my coding skills by doing different courses on the Udemy website. My favorite coding language at the moment would have to be Swift as I am aiming to become an iOS developer when I finish college and recieve my degree.
+
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="work-experience container">
+            <div class="container-content">
+                <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+                <div class="content">
+                    
+                <span class="employer-name">Harvey Norman: 09/2020 - Present</span><br>
+                I am currently working in Harvey Norman in Swords Airside retail park, my job title is under part time sales assistant. The work I do consists of EPOS responsibilities, managing stock and answering customer queries. I really enjoy working in Harvey Norman, the atmosphere is great and all of the staff are really nice and welcoming. I am based in the audio/visual section of the shop floor where I sell products ranging from top quality televisions to cheaper bluetooth speakers. I have very good technical product knowledge and always make sure I understand a product before selling it.<br>
+
+                <br><br>
+
+				<span class="employer-name">Arnotts (Expert): 11/2018 - 02/2020 </span><br>
+                I worked in Arnotts for just over a year and really enjoyed it. The work was very similar to what I do in Harvey Norman, again it consisted of stock management, till operation and supplying great customer service. I made various differnt connections throughout my time in Arnotts which I am very greatful for.<br>
+
+                </div>
+            </div>
+        </section>
+
+            <br><br>
+
+        <section id="projects" class="projects container">
+            <div class="container-content">
+                <h2><i class="fab fa-github"></i> Coding Projects</h2>
+                <div class="content">
+                    
+
+                <span class="project-name">Ciaran's Portfolio Website</span><br>    
+                This webpage is one of my first ever coding projects. The skills I learned during this project include HTML & CSS. I really enjoyed this project! Below is a link to my Github repository for this project, please feel free to check it out!
+
+				<br><br>
+
+                <a href="https://github.com/CiaranFarrell82/Portfolio-Website"><button class="btn"><i class="fab fa-github"></i> Website Github Repoisitory</button></a>
+
+                <br><br>
+
+                <span class="project-name">Instagram Clone Project</span><br>
+                I am currently in the process of learning iOS Development. I am learning via a course I purchased on <a href="https://www.udemy.com/course/instagram-firestore-app-clone-swift-5-ios-14-mvvm/">Udemy</a>.
+
+                This course teaches the basics of Swift, XCode while building an Instagram clone. Below is a link to the GitHub repository for this project:
+               	<br>
+
+				<br>
+                <a href="https://github.com/CiaranFarrell82/Instagram-Clone"><button class="btn"><i class="fab fa-github"></i> IG Clone Github Repoisitory</button></a>
+
+
+
+
+                </div>
+            </div>
+        </section>
+        
+            <br><br>
+
+        <section id="images" class="image-gallery container">
+            <div class="container-content">
+                <h2><i class="fab fa-apple"></i> iOS Project Screenshots</h2>
+                <div class="content">
+                    <img src="images/ig-screenshot-1.png" class= "ig-screenshot" alt="Instagram Clone Login Page">
+                    <img src="images/ig-screenshot-2.png" class="ig-screenshot" alt="Instagram Clone Feed Page">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-me container">
+            <div class="container-content">
+                <h2>Contact Me</h2>
+                    <form action="https://formspree.io/ciaran.farrell82@mail.dcu.ie" method="post">
+	                    <!-- Style this nicely.  Don't worry if the form doesn't work, marks here for how well you style it. -->
+                        <p>
+                            <input id="contact-name" type="text" name="contact-name" placeholder="Enter Name" /> </p>
+                        <p>
+                            <input id="contact-email" type="email" name="contact-email" placeholder="Enter Email" /> </p>
+                        <p>
+                    		<input type="tel" id="contact-phone" name="contact-phone" placeholder="Enter Phone Number" /> </p>
+                        <p>
+                        	<textarea rows="12" id="contact-message" name="contact-message" placeholder="Enter your message here..."></textarea></p>
+                        <p>
+                            <input type="submit" value="Send My Message" /> </p>
+                    </form>
+                </div>
+        </section>
+        <footer id = "footer-layout">
+                <p> &copy; <a href="dcu.ie/">DCU 2019-2020</a>
+				<span class="footer-separator">&middot;</span>
+				<span class="footer-text">Ciarån Farrell</span> <span class="footer-separator">&middot;</span> <span class="footer-text">This is student coursework</span> <span class="footer-separator">&middot;</span> <span class="footer-text">Lecturer <a href="http://www.computing.dcu.ie/~jkernan">Jane Kernan</a></span> <span class="footer-separator">&middot;</span> <span class="footer-text">
+     <a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a><br>
+     </span> </p>
+
+    <a href="https://github.com/CiaranFarrell82">
+        <img alt="Github" src="images/logo.png" class="footer-icon">
+    </a>
+        <!-- Note that the link to the validator above will only produce results when your page is uploaded to the server, and you click on the link from the browser.-->
+         
+        </footer>
+    </main>
+</body>
+
+</html>
